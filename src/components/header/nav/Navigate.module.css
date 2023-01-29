@@ -1,0 +1,12 @@
+.NavigateContainer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #20c997;
+}

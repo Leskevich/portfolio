@@ -1,0 +1,10 @@
+.ContainerBar {
+    display: flex;
+    gap: 14px
+}
+
+.icon {
+    font-size: 20px;
+    color: #fff;
+}
+

@@ -1,0 +1,29 @@
+.work{
+width: 350px;
+    background-color: burlywood;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 200px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+
+
+}
+.texProject{
+background-color: mediumseagreen;
+}
+.descriptionProject{
+
+}
+.projectTitle{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
