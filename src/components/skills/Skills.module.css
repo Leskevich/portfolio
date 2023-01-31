@@ -1,13 +1,10 @@
 .sectionSkill {
     min-height: 100vh;
     background-color:  #191919;
+    padding: 64px ;
 }
 
 .skillsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 64px ;
-
 }
 .skills{
     width: 100%;
@@ -15,4 +12,9 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.reactIcons{
+    font-size: 40px;
+    color:#20c997;
 }

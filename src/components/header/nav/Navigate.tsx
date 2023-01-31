@@ -7,9 +7,8 @@ export const Navigate = () => {
         <div className={s.NavigateContainer}>
             <NavLink className={s.Link} to="/home">home</NavLink>
             <NavLink className={s.Link} to="/skills">skills</NavLink>
-
-            <a className={s.Link} href="">project</a>
-            <a className={s.Link} href="">contact</a>
+            <NavLink className={s.Link} to="/project">project</NavLink>
+            <NavLink className={s.Link} to="/contact">contact</NavLink>
         </div>
     );
 };

@@ -1,26 +1,26 @@
 .skillContainer {
     padding: 10px;
     width: 400px;
-    /*background-color: mediumseagreen;*/
+    background: rgba(0, 0, 0, .302);
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.iconContainer{
-    margin-right: 48px;
-}
-.icon {
-    background-color: #ffffff80;
+
+
+.iconContainer {
     height: 70px;
     width: 70px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.descriptionContainer {
 
-}
 
 .title {
     margin: 0 0 10px 0;
-
     color: #fff;
 }
 

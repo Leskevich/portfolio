@@ -7,13 +7,12 @@ type SkillProps = {
 }
 
 export const Skill = (props: SkillProps) => {
-    const {title, description} = props.skill
+    const {title, description,icon} = props.skill
     return (
         <div className={s.skillContainer}>
             <div className={s.iconContainer}>
-                <div className={s.icon}></div>
+                    {icon}
             </div>
-
             <div className={s.descriptionContainer}>
                 <h3 className={s.title}>
                     {title}
