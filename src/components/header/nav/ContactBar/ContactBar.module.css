@@ -1,10 +1,10 @@
 .ContainerBar {
     display: flex;
-    gap: 14px
+    gap: 18px
 }
 
 .icon {
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
 }
 

@@ -1,21 +1,24 @@
 import React from 'react';
 import s from './Main.module.css'
-import stylesContainer from '../common/styles/Container.module.css'
+import myPicture from './../../components/common/Foto/Picture1.jpg'
 
 export const Main = () => {
     return (
-        <div className={s.main}>
-            <div className={stylesContainer.container}>
+        <section className={s.main}>
+            <div className={s.ContainerMain }>
                 <div className={s.text}>
-                    <span>Hello</span>
-                    <h1>My name is Artem</h1>
+                    <span>hello,my name is</span>
+                    <h1>artem leskevich</h1>
                     <p>Go to work</p>
                 </div>
-                <div className={s.foto}>
-                    <img src="" alt="foto"/>
+                <div>
+                    <img className={s.Picture}
+                         src={myPicture}
+                         alt="myPhoto"
+                    />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
