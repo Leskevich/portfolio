@@ -1,15 +1,29 @@
-.skill {
+.skillContainer {
     padding: 10px;
-    width: 250px;
-    background-color: mediumseagreen;
+    width: 400px;
+    /*background-color: mediumseagreen;*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+.iconContainer{
+    margin-right: 48px;
+}
+.icon {
+    background-color: #ffffff80;
+    height: 70px;
+    width: 70px;
+
 }
 
-.icon {
-    background-color: darkgrey;
-    height: 60px;
-    width: 60px;
+.descriptionContainer {
+
+}
+
+.title {
+    margin: 0 0 10px 0;
+
+    color: #fff;
+}
+
+.description {
+    color: #ffffff80;
 }
