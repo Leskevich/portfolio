@@ -5,6 +5,7 @@ import {Main} from "./components/main/Main";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Skills} from "./components/skills/Skills";
 import {Works} from "./components/works/works";
+import {Contacts} from "./components/Contacts/Contacts";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/home' element={<Main/>}/>
                 <Route path='/skills' element={<Skills/>}/>
                 <Route path='/project' element={<Works/>}/>
+                <Route path='/contact' element={<Contacts/>}/>
             </Routes>
         </div>
     );
