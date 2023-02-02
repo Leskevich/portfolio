@@ -1,0 +1,39 @@
+.workContainer {
+    width: 260px;
+    height: 470px;
+
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px 20px;
+}
+
+.descriptionContainer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #20c997;;
+}
+
