@@ -1,19 +1,28 @@
 import React from 'react';
 import s from './Contacts.module.css'
-import sContainer from './../common/styles/Container.module.css'
+import {Title} from "../common/Components/Title/Title";
 
 export const Contacts = () => {
     return (
         <div className={s.sectionContacts}>
-            <div className={`${sContainer.container} ${s.portfolioContainer}`}>
-                <h2>Контакты</h2>
-
-                <form action="" className={s.formContainer}>
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea className={s.fieldText}></textarea>
-                </form>
-                <button>Отправить</button>
+            <Title title={'Get in Touch'}/>
+            <div className={s.contactContainer}>
+                <div className={s.descriptionContainer}>
+                    <span>CONNECT WITH ME VIA PHONE</span>
+                    <span>+37529 205 39 75</span>
+                    <span>leskevichtema@gmail.com</span>
+                </div>
+                <div className={s.formContainer}>
+                    <form action="" className={s.form}>
+                        <span>SEND US A NOTE</span>
+                        <div className={s.fieldsContainer}>
+                            <input type="text" className={s.field}/>
+                            <input type="text" className={s.field}/>
+                        </div>
+                        <textarea className={s.fieldText}></textarea>
+                        <button className={s.button}>Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     );
