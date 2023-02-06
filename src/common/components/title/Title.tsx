@@ -1,10 +1,15 @@
 import React from 'react';
 import s from './Title.module.css'
 
-export const Title = (props) => {
+type TitleType={
+    title:string
+}
+
+export const Title = (props:TitleType) => {
+    const {title}=props
     return (
         <div className={s.title}>
-            <h2>{props.title}</h2>
+            <h2>{title}</h2>
         </div>
     );
 };

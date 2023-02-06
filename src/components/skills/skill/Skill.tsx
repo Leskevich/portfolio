@@ -1,9 +1,10 @@
 import React from 'react';
 import s from './Skill.module.css'
-import {MySkills} from "../Skills";
+import {SkillsType} from "../../../App";
+
 
 type SkillProps = {
-    skill: MySkills
+    skill: SkillsType
 }
 
 export const Skill = (props: SkillProps) => {

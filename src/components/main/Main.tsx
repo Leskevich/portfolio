@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.css'
-import myPicture from './../../components/common/Foto/Picture1.jpg'
+import myPicture from '../../accets/img/Picture1.jpg'
 
 export const Main = () => {
     return (

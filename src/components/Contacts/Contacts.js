@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Contacts.module.css'
-import {Title} from "../common/Components/Title/Title";
+import {Title} from "../../common/components/title/Title";
+import {ContactForm} from "./ContactForm";
 
 export const Contacts = () => {
     return (
@@ -12,17 +13,7 @@ export const Contacts = () => {
                     <span>+37529 205 39 75</span>
                     <span>leskevichtema@gmail.com</span>
                 </div>
-                <div className={s.formContainer}>
-                    <form action="" className={s.form}>
-                        <span>SEND US A NOTE</span>
-                        <div className={s.fieldsContainer}>
-                            <input type="text" className={s.field}/>
-                            <input type="text" className={s.field}/>
-                        </div>
-                        <textarea className={s.fieldText}></textarea>
-                        <button className={s.button}>Send Message</button>
-                    </form>
-                </div>
+                <ContactForm/>
             </div>
         </div>
     );

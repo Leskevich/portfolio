@@ -1,0 +1,25 @@
+.FormContainer {
+    width: 300px;
+}
+
+.Form input, textarea {
+    padding: 0 20px;
+    border: none;
+    width: 100%;
+    resize: none;
+    height: 30px;
+    background-color: #232a31;
+    color: #656565;
+}
+
+.Form textarea {
+    padding-top: 10px;
+    height: 130px;
+}
+
+.Errors {
+    /*background-color: burlywood;*/
+    font-size: 10px;
+    height: 15px;
+    color: #ff0000;
+}

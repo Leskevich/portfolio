@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import s from './project.module.css'
-import {DescriptionProjectType} from "../project";
+import {ProjectType} from "../../../App";
 
-type ProjectType = {
-    descriptionProject: DescriptionProjectType
+
+type ProjectPropsType = {
+    project: ProjectType
 }
 
-export const Project = (props: ProjectType) => {
-    const {title, description, style, linkCode, linkDemo} = props.descriptionProject
-
+export const Project = (props: ProjectPropsType) => {
+    const {title, description, style, linkCode, linkDemo} = props.project
     const [isVisible, setIsVisible] = useState<boolean>(false)
     const onMouseEnterHandler = () => {
         setIsVisible(true)
