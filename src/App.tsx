@@ -11,6 +11,7 @@ import {RiPrinterCloudFill} from "react-icons/ri";
 import {FiGitMerge} from "react-icons/fi";
 import time from "./accets/img/time.jpg";
 import social from "./accets/img/social.jpg";
+import count from "./accets/img/count.png";
 import {Projects} from "./components/Projects/project";
 import {ContactForm} from "./components/Contacts/ContactForm";
 
@@ -91,12 +92,23 @@ function App() {
             },
             linkCode: 'https://github.com/Leskevich/independentToDoList',
             linkDemo: ''
-        }, {
+        },
+        {
             id: '2',
             title: 'social-network',
             description: 'fadfdacdcacaadacdcda',
             style: {
                 backgroundImage: `url(${social})`,
+            },
+            linkCode: 'https://github.com/Leskevich/samurai-way-main',
+            linkDemo: ''
+        },
+        {
+            id: '3',
+            title: 'count',
+            description: 'fadfdacdcacaadacdcda',
+            style: {
+                backgroundImage: `url(${count})`,
             },
             linkCode: 'https://github.com/Leskevich/samurai-way-main',
             linkDemo: ''
