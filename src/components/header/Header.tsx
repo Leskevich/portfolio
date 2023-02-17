@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.css'
-import {Navigate} from "./nav/Navigate";
+import {Navigate} from "./nav/NavigateBar/Navigate";
 import {ContactBar} from "./nav/ContactBar/ContactBar";
 
 export const Header = () => {

@@ -120,13 +120,24 @@ function App() {
         <div className={"App"}>
             <Header/>
             <Routes>
-                <Route path='/' element={<Navigate to={'/home'}/>}/>
-                <Route path='/home' element={<Main/>}/>
-                <Route path='/skills' element={<Skills skills={skills}/>}/>
-                <Route path='/project' element={<Projects projects={Project}/>}/>
-                <Route path='/contact' element={<Contacts/>}/>
-                <Route path='/form' element={<ContactForm/>}/>
-
+                <Route path='/'
+                       element={<Navigate to={'/home'}/>}
+                />
+                <Route path='/home'
+                       element={<Main/>}
+                />
+                <Route path='/skills'
+                       element={<Skills skills={skills}/>}
+                />
+                <Route path='/project'
+                       element={<Projects projects={Project}/>}
+                />
+                <Route path='/contact'
+                       element={<Contacts/>}
+                />
+                <Route path='/form'
+                       element={<ContactForm/>}
+                />
             </Routes>
         </div>
     );
