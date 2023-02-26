@@ -3,7 +3,7 @@ import {AiFillGithub} from 'react-icons/ai';
 import {BsLinkedin} from 'react-icons/bs';
 import {BsTelegram} from 'react-icons/bs';
 import {SiCodewars} from 'react-icons/si';
-import s from './ContactBar.module.css'
+import s from './ContactBar.module.scss'
 
 
 export const ContactBar = () => {

@@ -1,0 +1,44 @@
+@import "../../../common/styles/variables";
+
+.nav {
+  display: flex;
+  gap: 20px;
+
+  .active {
+    color: $titleColor;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $textColor;
+    font-size: 18px;
+    position: relative;
+    padding: 15px 0;
+
+    &:hover {
+      color: $titleColor;
+
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: $titleColor;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      bottom: 0;
+    }
+  }
+}

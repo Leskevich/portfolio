@@ -1,0 +1,66 @@
+@import "src/common/styles/variables";
+.substrate{
+  position: fixed;
+  margin-right: 250px;
+  width: 100%;
+  opacity: 50%;
+  height: 100%;
+  background-color: black;
+  z-index: 9;
+}
+.sideBar {
+  position: fixed;
+  top: 72px;
+  left: 8px;
+  background-color: $bgColorsSideBar;
+  height: 150px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 10;
+
+
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    .active {
+      color: $titleColor;
+
+      &::before {
+        width: 100%;
+      }
+    }
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: $textColor;
+      font-size: 18px;
+      position: relative;
+
+
+      &:hover {
+        color: $titleColor;
+
+        &::before {
+          width: 100%;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: $titleColor;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        bottom: 0;
+      }
+    }
+  }
+}
