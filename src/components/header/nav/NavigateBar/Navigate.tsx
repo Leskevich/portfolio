@@ -26,7 +26,5 @@ export const Navigate = () => {
 };
 
 
-export const Substrate = () => {
-    return
-}
+
 

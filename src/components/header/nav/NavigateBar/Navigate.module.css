@@ -28,16 +28,23 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    z-index: 10;
 }
 
 .Substrate {
     position: absolute;
-    background-color: rgba(0, 0, 0, .202);
+    /*background-color: rgba(0, 0, 0, .302);*/
     width: 100vh;
     height: 100vh;
     z-index: 9;
     top: 0;
     left: 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
 }
 
 

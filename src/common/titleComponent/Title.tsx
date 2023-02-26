@@ -8,8 +8,10 @@ type TitleType={
 export const Title = (props:TitleType) => {
     const {title}=props
     return (
-        <div className={s.title}>
-            <h2>{title}</h2>
+        <div>
+            <div className={s.title}>
+                <h2>{title}</h2>
+            </div>
         </div>
     );
 };

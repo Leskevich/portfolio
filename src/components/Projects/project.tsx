@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './projects.module.css'
 import {Project} from "./Project/project";
-import {Title} from "../../common/components/title/Title";
+import {Title} from "../../common/titleComponent/Title";
 import {ProjectType} from "../../App";
 
 type ProjectsPropsType = {

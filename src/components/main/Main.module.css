@@ -8,10 +8,10 @@
 .ContainerMain {
     width: 80%;
     height: 100%;
-    padding: 64px 60px 0;
+    padding: 0 60px ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
@@ -35,20 +35,42 @@
 }
 
 @media screen and (max-width: 912px) {
-    .ContainerMain{
+    .ContainerMain {
         padding: 64px 0 0;
     }
 }
+
 @media screen and (max-width: 764px) {
     .text {
         text-align: center;
         font-size: 12px;
     }
+
     .text h1 {
         font-size: 40px;
         width: 100%;
     }
-    .ContainerMain{
+
+    .ContainerMain {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .text h1 {
+        font-size: 25px;
+        width: 100%;
+    }
+    .ContainerMain{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .Picture{
+        width: 270px;
+        height: 60vh;
+    }
+    .ContainerMain {
+        padding: 0;
     }
 }
