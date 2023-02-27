@@ -1,8 +1,12 @@
-import {SiJavascript, SiPostman, SiReact, SiRedux} from "react-icons/si";
 import {RiPrinterCloudFill} from "react-icons/ri";
 import {FiGitMerge} from "react-icons/fi";
 import React from "react";
 import {FaWpforms} from "react-icons/fa";
+import { ImCss3 } from "@react-icons/all-files/im/ImCss3";
+import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
+import { SiPostman } from "@react-icons/all-files/si/SiPostman";
+import { SiReact } from "@react-icons/all-files/si/SiReact";
+import { SiRedux } from "@react-icons/all-files/si/SiRedux";
 
 
 export type SkillsType = {
@@ -19,12 +23,12 @@ export const MySkills: SkillsType[] = [
     //     description: 'Fundamentals HTML tags, form and validation, semantic HTML.',
     //     icon: <ImHtmlFive/>
     // },
-    // {
-    //     id: '2',
-    //     titleComponent: 'CSS',
-    //     description: 'Positioning, box modal, selectors, flexbox, media queries, transformation &amp; animation.',
-    //     icon: <ImCss3/>
-    // },
+    {
+        id: '2',
+        title: 'CSS/SCSS',
+        description: 'Positioning, box modal, selectors, flexbox, media queries.',
+        icon: <ImCss3/>
+    },
     {
         id: '3',
         title: 'JavaScript/TypeScript',
@@ -34,7 +38,7 @@ export const MySkills: SkillsType[] = [
     {
         id: '4',
         title: 'React',
-        description: 'Class and functional components, state &amp; props, components life-cycle, routing, conditional rendering, HOC',
+        description: 'Class and functional components; props, components life-cycle, conditional rendering, hooks',
         icon: <SiReact/>
     },
     {

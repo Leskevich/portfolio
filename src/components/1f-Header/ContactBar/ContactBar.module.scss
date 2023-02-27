@@ -2,11 +2,14 @@
 
 .ContainerBar {
   display: flex;
-  gap: 18px;
+  gap: 26px;
 
   .icon {
-    font-size: 25px;
+    font-size: 26px;
     color: $textColor;
+    &:hover{
+      color: $titleColor;
+    }
   }
 }
 

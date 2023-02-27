@@ -1,0 +1,23 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
+
+.sectionContacts {
+  @include container();
+
+  .contactContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .descriptionContainer {
+      @include display(flex,column,center,flex-start);
+      color: $textColor;
+
+    }
+  }
+}
+
+
+
+

@@ -29,7 +29,7 @@ export type ProjectType = {
 }
 
 function App() {
-    const [isOpenSideBar, setOpenSideBar] = useState(true)
+    const [isOpenSideBar, setOpenSideBar] = useState(false)
     const closeSideBar = () => setOpenSideBar(false)
     const openCloseSideBar = () => setOpenSideBar((state) => !state)
     return (

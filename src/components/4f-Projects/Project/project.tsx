@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import s from './project.module.css'
+import s from './project.module.scss'
 import {ProjectType} from "../../../App";
 
 
@@ -22,7 +22,7 @@ export const Project = (props: ProjectPropsType) => {
              onMouseLeave={onMouseLeaveHandler}>
             <div className={s.imgContainer} style={style}>
                 <div className={s.descriptionContainer}>
-                    <div>
+                    <div className={s.title}>
                         {title}
                     </div>
                     {isVisible && <div>{description}</div>}

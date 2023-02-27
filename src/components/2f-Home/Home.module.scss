@@ -3,8 +3,8 @@
 
 
 .ContainerMain {
-  @include container($bgContainerColor);
-  @include display(flex, column, center);
+  @include container();
+  @include display(flex, column, center,null);
 
   .main {
     display: flex;

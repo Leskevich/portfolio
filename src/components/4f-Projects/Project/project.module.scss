@@ -1,0 +1,54 @@
+@import "src/common/styles/mixins";
+@import "src/common/styles/variables";
+
+.workContainer {
+  width: 260px;
+  height: 470px;
+
+  .imgContainer {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    @include display(flex, column, flex-end, center);
+    padding: 25px 20px;
+
+    .descriptionContainer {
+      color: $textColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .title {
+        color: $titleColor;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      .buttonContainer {
+        display: flex;
+        gap: 10px;
+
+        .button {
+          width: 80px;
+          height: 30px;
+          border-radius: 10px;
+          background-color: transparent;
+          color: $textColor;
+          border: 1px solid $textColor;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

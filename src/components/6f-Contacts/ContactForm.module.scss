@@ -1,0 +1,57 @@
+@import "src/common/styles/variables";
+
+.FormContainer {
+  width: 300px;
+
+  & h3 {
+    margin-bottom: 10px;
+    color: $textColor;
+  }
+
+  .Form {
+    display: flex;
+    flex-direction: column;
+
+    & input, textarea {
+      border-radius: 4px;
+      padding: 0 20px;
+      border: none;
+      width: 100%;
+      resize: none;
+      height: 30px;
+      background-color: $bgColorsSideBar;
+      color: $descriptionColor;
+    }
+
+    & textarea {
+      padding-top: 10px;
+      height: 130px;
+    }
+
+    .Errors {
+      font-size: 10px;
+      height: 15px;
+      color: #ff0000;
+    }
+
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+
+      .Button {
+        width: 150px;
+        height: 34px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

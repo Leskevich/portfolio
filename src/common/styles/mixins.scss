@@ -1,15 +1,16 @@
 @import "variables";
 
 
-@mixin container($bg) {
-  background-color: $bg;
-  height: 100vh;
-  padding: 68px 10px 0;
+@mixin container() {
+  background-color: $bgContainerColor;
+  min-height: 100vh;
+  padding: 68px 10px 10px;
 }
 
-@mixin display($ds,$fd,$jc) {
+@mixin display($ds,$fd,$jc,$ai) {
   display: $ds;
   flex-direction: $fd;
   justify-content: $jc;
+  align-items: $ai;
 }
 

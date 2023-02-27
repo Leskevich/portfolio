@@ -1,6 +1,6 @@
 import React from 'react';
 import {SubmitHandler, useForm} from "react-hook-form";
-import s from "./ContactForm.module.css"
+import s from "./ContactForm.module.scss"
 import emailjs from '@emailjs/browser';
 
 
@@ -26,21 +26,22 @@ export const ContactForm = () => {
     return (
         <div className={s.FormContainer}>
             <h3>SEND US A NOTE</h3>
-            <form className={s.Form} onSubmit={handleSubmit(onSubmit)}>
+            <form className={s.Form}
+                  onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder={"name"}
                        {...register("user_name", {
                                required: "Поле обязательно к заполнению",
-                           minLength:{
-                                   value:2,
-                               message:"Имя не может содержать 1 символ."
-                           }
+                               minLength: {
+                                   value: 2,
+                                   message: "Имя не может содержать 1 символ."
+                               }
                            }
                        )}
                 />
                 <div className={s.Errors}>
-                    {errors?.user_name && <span>{errors.user_name?.message || "error"}</span>}
+                    {errors?.user_name &&
+                        <span>{errors.user_name?.message || "error"}</span>}
                 </div>
-
                 <input placeholder={"email"}
                        {...register("user_email", {
                            required: "Поле обязательно к заполнению",
@@ -53,7 +54,6 @@ export const ContactForm = () => {
                 <div className={s.Errors}>
                     {errors?.user_email && <span>{errors.user_email?.message || "error"}</span>}
                 </div>
-
                 <textarea placeholder={"message"}
                           {...register("message", {
                               required: "Поле обязательно к заполнению",
@@ -65,10 +65,12 @@ export const ContactForm = () => {
                           }
                 />
                 <div className={s.Errors}>
-                    {errors?.message && <span className={s.Errors}>{errors.message?.message || "error"}</span>}
+                    {errors?.message &&
+                        <span className={s.Errors}>{errors.message?.message || "error"}</span>}
                 </div>
-
-                <button className={s.Button} disabled={!isValid} type="submit">Отправить</button>
+                <div className={s.buttonContainer}>
+                    <button className={s.Button} disabled={!isValid} type="submit">Отправить</button>
+                </div>
             </form>
         </div>
     );

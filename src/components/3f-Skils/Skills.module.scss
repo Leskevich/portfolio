@@ -1,0 +1,17 @@
+@import "src/common/styles/mixins";
+@import "src/common/styles/variables";
+
+.sectionSkill {
+  @include container();
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+
+
+
