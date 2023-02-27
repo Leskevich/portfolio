@@ -1,0 +1,47 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
+
+
+.ContainerMain {
+  @include container($bgContainerColor);
+  @include display(flex, column, center);
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text {
+      text-transform: uppercase;
+      color: $titleColor;
+      font-size: 16px;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+      }
+
+      & h1 {
+        width: 310px;
+        font-size: 60px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .Picture {
+      width: 280px;
+      height: 60vh;
+    }
+  }
+}
+
+

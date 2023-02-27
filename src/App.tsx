@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {Header} from "./components/1f-Header/Header";
-import {Main} from "./components/2f-Home/Main";
+import {Home} from "./components/2f-Home/Home";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Skills} from "./components/3f-Skils/Skills";
 import {Contacts} from "./components/6f-Contacts/Contacts";
@@ -42,7 +42,7 @@ function App() {
                            element={<Navigate to={'/home'}/>}
                     />
                     <Route path='/home'
-                           element={<Main/>}
+                           element={<Home/>}
                     />
                     <Route path='/skills'
                            element={<Skills skills={MySkills}/>}
