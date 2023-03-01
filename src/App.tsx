@@ -5,7 +5,7 @@ import {Home} from "./components/2f-Home/Home";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Skills} from "./components/3f-Skils/Skills";
 import {Contacts} from "./components/6f-Contacts/Contacts";
-import {Projects} from "./components/4f-Projects/project";
+import {Projects} from "./components/4f-Projects/projects";
 import {ContactForm} from "./components/6f-Contacts/ContactForm";
 import {MyProject} from "./1a-bll/Project-State";
 import {MySkills} from "./1a-bll/MySkilsState";

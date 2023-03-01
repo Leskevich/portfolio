@@ -23,7 +23,7 @@ export const MyProject: ProjectType[] = [
             backgroundImage: `url(${social})`,
         },
         linkCode: 'https://github.com/Leskevich/samurai-way-main',
-        linkDemo: ''
+        linkDemo: 'https://github.com/Leskevich/samurai-way-main'
     },
     {
         id: '3',

@@ -1,0 +1,21 @@
+@import "src/common/styles/mixins";
+
+.sectionWorks {
+  @include container();
+
+  .works {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: 880px) {
+      justify-content: center;
+    }
+  }
+
+}
+
+
+
+
+
