@@ -6,14 +6,16 @@
 
   .contactContainer {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 
     .descriptionContainer {
-      @include display(flex,column,center,flex-start);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
       color: $textColor;
-
     }
   }
 }
